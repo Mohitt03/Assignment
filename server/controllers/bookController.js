@@ -53,7 +53,7 @@ export const updatebook = async (req, res) => {
             return res.status(404).json({ msg: "Book not found " });
         }
         await book.findByIdAndUpdate(id, req.body, { new: true })
-        res.status(500).json({ msg: "Book updated successfully" });
+        res.status(200).json({ msg: "Book updated successfully" });
     }
     catch (err) {
         res.status(500).json({ error: err.message });
@@ -68,7 +68,7 @@ export const deletebook = async (req, res) => {
             return res.status(404).json({ msg: "Book not found " });
         }
         await book.findByIdAndDelete(id, req.body, { new: true })
-        res.status(500).json({ msg: "Book deleted successfully" });
+        res.status(200).json({ msg: "Book deleted successfully" });
     }
     catch (err) {
         res.status(500).json({ error: err.message });

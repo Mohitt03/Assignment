@@ -44,7 +44,7 @@ const Edit = () => {
 
   return (
     <div className='editBook'>
-      <Link to={"/"}>Back</Link>
+      <Link to="/">Back</Link>
       <h3>Update Book</h3>
       <form className='editBookForm' onSubmit={submitForm} >
         <div className="inputGroup">

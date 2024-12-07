@@ -11,7 +11,7 @@ const URL = process.env.MONGO_URL;
 
 app.use(cors());
 app.use(bodyParser.json());
-mongoose.connect(URL,{ useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(URL)
 
 .then(()=>{
     console.log("DB connected successfully!");

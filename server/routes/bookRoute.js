@@ -5,5 +5,5 @@ route.post("/create",createbook);
 route.get("/getAll",getAllBook);
 route.get("/getone/:id",getOneBook);
 route.put("/update/:id",updatebook);
-route.delete("/delete/:id",deletebook);
+route.delete("/delete/:id",deletebook); 
 export default route;

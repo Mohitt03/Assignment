@@ -1,7 +1,8 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-import Add from "./components/addBook/Add"
+import Add from "./components/addBook/Add";
 import Book from './components/getBook/book';
 import Edit from './components/updateBook/edit';
+import Home from "./components/MainPage/Home";
 
 function App() {
   const route=createBrowserRouter([
@@ -11,6 +12,10 @@ function App() {
     },
     {
       path:"/",
+      element:<Home/>
+    },  
+    {
+      path:"/admin",
       element:<Book/>
     },
     {
